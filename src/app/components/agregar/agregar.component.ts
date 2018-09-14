@@ -69,6 +69,13 @@ export class AgregarComponent implements OnInit {
 
 
   }
+  eliminar(i){
+
+    let index = i;
+    if (index > -1) {
+      this.listaV.splice(index, 1);
+    }
+  }
 
   public myDatePickerOptions: IMyDpOptions = {
     // other options...

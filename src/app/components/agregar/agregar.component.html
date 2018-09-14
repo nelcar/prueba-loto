@@ -72,6 +72,22 @@
         <button (click)="agregar()" class="btn btn-success" type="button" name="button">Agregar Vacaciones</button>
       </div>
 
+      <div class="col-md-12 jumbotron">
+        <div class="col-md-12">
+          <div *ngFor="let i of listaV; let ix=index" class="row">
+            <div class="col-md-4">
+              <label for="">Fecha de Vacaciones: {{i.fechaV.formatted}}</label>
+            </div>
+            <div class="col-md-4">
+              <label for="">Lugar: {{i.lugar}}</label>
+            </div>
+            <div class="col-md-4">
+              <button (click)="eliminar(ix) "class="btn btn-danger"type="button" name="button">Eliminar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="col-md-6">
         <div class="">
           <h3>Fecha de Ingreso</h3>
