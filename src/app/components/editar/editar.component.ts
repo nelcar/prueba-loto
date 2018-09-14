@@ -93,6 +93,10 @@ export class EditarComponent implements OnInit {
     }
   }
 
+  regresar(){
+    this.router.navigate(['home']);
+  }
+
   public myDatePickerOptions: IMyDpOptions = {
     // other options...
     dateFormat: 'dd.mm.yyyy',

@@ -1,17 +1,21 @@
 <div class="container">
 
+  <div class="">
+    <button (click)="regresar()" class="btn btn-danger" type="button" name="button">Regresar</button>
+  </div>
+
   <form (ngSubmit)= "guardar(forma)" #forma= "ngForm" [ngClass]="{'was-validated':!success}">
     <div class="text-center">
-      <h2>Editar Vacaciones</h2>
+      <h1>Editar Vacaciones</h1>
       <hr>
     </div>
 
 
-    <div class="col-md-12 row">
+    <div class="col-md-12 marginBotton row">
 
-      <div class="col-md-6">
+      <div class="col-md-6 marginBotton">
         <div class="">
-          <h3>Título de Vacación</h3>
+          <h4>Título de Vacación</h4>
         </div>
         <div class="">
           <input
@@ -25,9 +29,9 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6 marginBotton">
         <div class="">
-          <h3>Solicitante (Nombre Completo)</h3>
+          <h4>Solicitante (Nombre Completo)</h4>
         </div>
         <div class="">
           <input
@@ -41,18 +45,18 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6 marginBotton">
         <div class="">
-          <h3>Fecha de Vacación</h3>
+          <h4>Fecha de Vacación</h4>
         </div>
         <div class="">
           <my-date-picker [(ngModel)]="elemento.fechaV" name="fechaV" [options]="myDatePickerOptions"></my-date-picker>
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6 marginBotton">
         <div class="">
-          <h3>Lugar de Vacación</h3>
+          <h4>Lugar de Vacación</h4>
         </div>
         <div class="">
           <input
@@ -68,12 +72,12 @@
 
 
 
-      <div class="col-md-12 text-center">
+      <div class="col-md-12 marginBotton text-center">
         <button (click)="agregar()" class="btn btn-success" type="button" name="button">Agregar Vacaciones</button>
       </div>
 
-      <div class="col-md-12 jumbotron">
-        <div class="col-md-12">
+      <div class="col-md-12 marginBotton jumbotron">
+        <div class="col-md-12 marginBotton">
           <div *ngFor="let i of listaV; let ix=index" class="row">
             <div class="col-md-4">
               <label for="">Fecha de Vacaciones: {{i.fechaV.formatted}}</label>
@@ -88,9 +92,9 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6 marginBotton">
         <div class="">
-          <h3>Fecha de Ingreso</h3>
+          <h4>Fecha de Ingreso</h4>
         </div>
         <div class="">
           <input
@@ -107,7 +111,7 @@
 
     </div>
 
-    <div class="col-md-12">
+    <div class="col-md-12 marginBotton">
       <button class="btn btn-primary btn-block" type="submit" name="button">Editar</button>
     </div>
   </form>
