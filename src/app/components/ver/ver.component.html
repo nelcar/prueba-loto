@@ -1,0 +1,60 @@
+<div class="container">
+
+  <div class="">
+    <div class="derecha">
+      <button (click)="editar()" class="btn btn-warning" type="button" name="button">Editar</button>
+    </div>
+    <div class="izquierda">
+      <button (click)="Regresar()" class="btn btn-danger" type="button" name="button">Regresar</button>
+    </div>
+  </div>
+  <div class="text-center">
+    <h1>{{vacaciones.titulo}}</h1>
+    <hr>
+  </div>
+
+  <div class="col-md-12 row">
+    <div class="col-md-6 row">
+      <div class="">
+        <label class="titulo" for="">Solicitante: </label>
+      </div>
+      <div class="">
+        <label class="respuesta" for="">{{vacaciones.solicitante}}</label>
+      </div>
+    </div>
+
+    <div class="col-md-6 row">
+      <div class="">
+        <label class="titulo" for="">Fecha de Ingreso: </label>
+      </div>
+      <div class="">
+        <label class="respuesta" for="">{{vacaciones.fechaI}}</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="">
+
+      <div class=" table table-responsive">
+        <table class="table table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col" >Fecha  </th>
+              <th scope="col" > Lugar </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let key of vacaciones.lista | keys; let i = index">
+              <td >{{i + 1}}</td>
+              <td >{{vacaciones.lista[key].fechaV.formatted}}</td>
+              <td >{{vacaciones.lista[key].lugar}}</td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+  </div>
+
+</div>
