@@ -22,7 +22,7 @@
             <td >{{vacaciones[key].solicitante}}</td>
             <td>
               <button  (click)="ver(vacaciones[key])" class="btn btn-info" type="button" name="button">Ver</button>
-              <button class="btn btn-warning" type="button" name="button">Editar</button>
+              <button (click)="editar(vacaciones[key]) "class="btn btn-warning" type="button" name="button">Editar</button>
               <button (click)="eliminar(vacaciones[key])" class="btn btn-danger" type="button" name="button">Eliminar</button>
             </td>
           </tr>

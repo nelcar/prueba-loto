@@ -35,4 +35,8 @@ export class ListarComponent implements OnInit {
 
   }
 
+  editar(tmp:Vacaciones){
+    this.router.navigate(['editar',tmp.key$]);
+  }
+
 }
