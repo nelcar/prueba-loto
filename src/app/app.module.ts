@@ -18,6 +18,7 @@ import { MyDatePickerModule } from '../assets/my-date-picker/index';
 import {VacacionesService} from './services/vacaciones.service';
 import { VerComponent } from './components/ver/ver.component';
 import { EditarComponent } from './components/editar/editar.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { EditarComponent } from './components/editar/editar.component';
     ListarComponent,
     VerComponent,
     EditarComponent,
-    KeysPipe
+    KeysPipe,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
