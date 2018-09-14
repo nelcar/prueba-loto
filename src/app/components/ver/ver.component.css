@@ -1,0 +1,17 @@
+.derecha{
+  align-items: right;
+  text-align: right;
+}
+
+.izquierda{
+  align-items: left;
+  text-align: left;
+}
+
+.titulo{
+  font-weight: bold;
+}
+
+.respuesta{
+  color: blue;
+}

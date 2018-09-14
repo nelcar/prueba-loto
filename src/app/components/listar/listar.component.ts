@@ -39,4 +39,8 @@ export class ListarComponent implements OnInit {
     this.router.navigate(['editar',tmp.key$]);
   }
 
+  regresar(){
+    this.router.navigate(['home']);
+  }
+
 }
